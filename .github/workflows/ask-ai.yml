@@ -5,7 +5,7 @@ on:
 permissions:
   models: read
 
-  jobs:
+jobs:
   ask-ai:
     runs-on: ubuntu-latest
 
@@ -23,5 +23,3 @@ permissions:
           echo "## 🤖 AI Response" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "${{ steps.ai-response.outputs.response }}" >> $GITHUB_STEP_SUMMARY
-
-          
